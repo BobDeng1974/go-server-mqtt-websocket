@@ -4,9 +4,12 @@ On this project a Go server is subscribed to a MQTT borker from AWS or AZURE to 
 The data is broadcast to the client via websockets so Charts are updated in real time.
 
 
-Note 1: most of the code to create the html/css came from https://github.com/creativetimofficial/black-dashboard
-Note 2: this applicatation requires credentials for AWS and Azure to connect MQTT (see dash.go file).
+Note 1: most of the code to create the html/css came from https://github.com/creativetimofficial/black-dashboard.
 
+Note 2: this applicatation requires credentials for AWS and Azure to connect MQTT (see dash.go file). 
+For AWS update files on "./files/aws/". For AZURE set an OS environment variable called "IOTHUB_SERVICE_CONNECTION_STRING".
+
+Note 3: To run the application: "go run dash.go"
 
 Author: Carlos A. Cepeda
 

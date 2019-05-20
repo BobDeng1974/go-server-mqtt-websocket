@@ -247,7 +247,7 @@ func main() {
 		//MQTT AZURE
 		fmt.Println("MQTT  AZURE")
 		c, err := iotservice.NewClient(
-			iotservice.WithConnectionString(os.Getenv("IOTHUB_SERVICE_CONNECTION_STRING2")),
+			iotservice.WithConnectionString(os.Getenv("IOTHUB_SERVICE_CONNECTION_STRING")),
 			
 		)
 		if err != nil {
